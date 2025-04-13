@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCSICT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h4 style="margin-left: 15px;">ISUC</h4>
+        <div>
+        <a href="index.html" class="active" style="margin-left: 50px;">Home</a>
+        <a href="about_us.html">About Us</a>                        
+        <a href="#programs">Programs</a>
+        <a href="#contact">Contact Us</a>
+        </div>     
+    </nav>
+
+    <div class="page1">
+    <h1>Welcome to Isabela State University <br> 
+    <span style="margin-left: 160px;"> Cabagan Campus </span></h1>
+    <p>Shaping Future Tech Leaders Through Innovation, Code, and Creativity</p>
+
+    <video class="isu" controls width="700">
+        <source src="vlog.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+    <button class="enroll">Enroll Now!</button>
+    </div>
+
+    <script>
+        const navLinks = document.querySelectorAll("nav a");
+        navLinks.forEach(link => {
+          if (link.href === window.location.href) {
+            link.classList.add("active");
+          }
+        });
+      </script>         
+
+<footer style="background-color: white;padding:10px; text-align: center;">
+   <p>@Copy 2025 Isabela State University - Cabagan Campus | College of Computing Studies, Information and Communications Technology</p>
+</footer>
+    
+</body>
+</html>
